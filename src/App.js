@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 import Navbar from './components/Navbar.js';
 import User from './components/User.js';
-
+import Tablo from './components/Tablo';
+import Card from './components/Card';
+import Drawer from './components/Drawer';
 import './App.css';
+
 
 class App extends Component {
   render(){
@@ -10,6 +13,9 @@ class App extends Component {
       <div className='container'>
        
        <Navbar title='User App'/> {/*Normalde navbarın yanına bir string değerinde bir title atıyorum... */}
+       <hr />
+       <Drawer/>
+       
        <hr />
        <User
         name = "Garip"
@@ -25,9 +31,17 @@ class App extends Component {
 
        />
           <User
-       
+        name="Jhon"
+        lastName="Doe"
+        age="18" 
+
        />
+        <Tablo/>
+        <br />
+        <Card/>
+        <br />
         
+        <br />
       </div>
     )
   }
