@@ -9,7 +9,7 @@ class App extends Component {
     return (
       <div className='container'>
        
-       <Navbar title = "User APP"/>
+       <Navbar title='User App'/> {/*Normalde navbarın yanına bir string değerinde bir title atıyorum... */}
        <hr />
        <User
         name = "Garip"
@@ -23,6 +23,9 @@ class App extends Component {
         lastName="Doe"
         age = "36"
 
+       />
+          <User
+       
        />
         
       </div>
